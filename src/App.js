@@ -25,9 +25,9 @@ function App() {
 
         {/* <UserGreeting></UserGreeting> */}
 
-        {/* <NameList></NameList> */}
+        <NameList></NameList>
 
-        <PersonList></PersonList>
+        {/* <PersonList></PersonList> */}
 
       
     </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 function NameList() {
   const names = ["shanu", "nithin", "nikhil"];
-  const mappedNames = names.map((name) => <h1>{name}</h1>);
+  const mappedNames = names.map((name,ind) => <h1 key={ind}> {ind} {name}</h1>);
 
   return <div>{mappedNames}</div>;
 }
