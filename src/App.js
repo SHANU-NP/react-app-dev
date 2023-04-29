@@ -9,6 +9,7 @@ import EventBind from "./components/EventBind";
 import ParentComponent from "./components/Parent";
 import UserGreeting from "./components/UserGreeting";
 import NameList from './components/NameList';
+import PersonList from "./components/PersonList";
 
 function App() {
   return (
@@ -24,7 +25,9 @@ function App() {
 
         {/* <UserGreeting></UserGreeting> */}
 
-        <NameList></NameList>
+        {/* <NameList></NameList> */}
+
+        <PersonList></PersonList>
 
       
     </div>
