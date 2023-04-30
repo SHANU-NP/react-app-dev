@@ -10,6 +10,7 @@ import ParentComponent from "./components/Parent";
 import UserGreeting from "./components/UserGreeting";
 import NameList from './components/NameList';
 import PersonList from "./components/PersonList";
+import StayleSheets from "./components/StayleSheets";
 
 function App() {
   return (
@@ -25,9 +26,11 @@ function App() {
 
         {/* <UserGreeting></UserGreeting> */}
 
-        <NameList></NameList>
+        {/* <NameList></NameList> */}
 
         {/* <PersonList></PersonList> */}
+
+        <StayleSheets></StayleSheets>
 
       
     </div>
