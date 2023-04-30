@@ -30,7 +30,7 @@ function App() {
 
         {/* <PersonList></PersonList> */}
 
-        <StayleSheets></StayleSheets>
+        <StayleSheets isPrimaryEnabled={true}></StayleSheets>
 
       
     </div>
