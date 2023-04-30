@@ -11,6 +11,7 @@ import UserGreeting from "./components/UserGreeting";
 import NameList from './components/NameList';
 import PersonList from "./components/PersonList";
 import StayleSheets from "./components/StayleSheets";
+import Inine from "./components/Inine";
 
 function App() {
   return (
@@ -30,7 +31,8 @@ function App() {
 
         {/* <PersonList></PersonList> */}
 
-        <StayleSheets isPrimaryEnabled={true}></StayleSheets>
+        {/* <StayleSheets isPrimaryEnabled={true}></StayleSheets> */}
+        <Inine></Inine>
 
       
     </div>
