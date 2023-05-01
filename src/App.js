@@ -13,11 +13,18 @@ import PersonList from "./components/PersonList";
 import StayleSheets from "./components/StayleSheets";
 import Inine from "./components/Inine";
 import Form from "./components/Form";
+import FragmentDemo from './components/FragmentDemo'
+import Table from "./components/Table";
 
 function App() {
   return (
     <div className="App">
-      <Form></Form>
+
+
+      {/* both are example for react fragment */}
+      {/* <FragmentDemo/> */}
+      <Table></Table>
+
     </div>
   );
 }
