@@ -15,15 +15,13 @@ import Inine from "./components/Inine";
 import Form from "./components/Form";
 import FragmentDemo from './components/FragmentDemo'
 import Table from "./components/Table";
+import ParentComp from "./components/ParentComp";
 
 function App() {
   return (
     <div className="App">
 
-
-      {/* both are example for react fragment */}
-      {/* <FragmentDemo/> */}
-      <Table></Table>
+      <ParentComp></ParentComp>
 
     </div>
   );
