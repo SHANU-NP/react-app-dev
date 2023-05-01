@@ -16,13 +16,13 @@ import Form from "./components/Form";
 import FragmentDemo from './components/FragmentDemo'
 import Table from "./components/Table";
 import ParentComp from "./components/ParentComp";
+import RefDemo from './components/RefDemo';
 
 function App() {
   return (
     <div className="App">
 
-      <ParentComp></ParentComp>
-
+      <RefDemo></RefDemo>
     </div>
   );
 }
