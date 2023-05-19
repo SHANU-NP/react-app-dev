@@ -1,29 +1,16 @@
-import logo from "./logo.svg";
-import "./App.css";
-import Message from "./components/Message";
-import Welcome from "./components/Welocme";
-import Counter from "./components/Counter";
-import FunctionClick from "./components/FunctionClick";
-import ClassClick from "./components/ClassClick";
-import EventBind from "./components/EventBind";
-import ParentComponent from "./components/Parent";
-import UserGreeting from "./components/UserGreeting";
-import NameList from "./components/NameList";
-import PersonList from "./components/PersonList";
-import StayleSheets from "./components/StayleSheets";
-import Inine from "./components/Inine";
-import Form from "./components/Form";
-import FragmentDemo from './components/FragmentDemo'
-import Table from "./components/Table";
-import ParentComp from "./components/ParentComp";
-import RefDemo from './components/RefDemo';
-import FrParentComponent from "./components/refs/FrParentComponent";
+import ErrorBoundry from "./components/errorHandling/ErrorBoundry";
+import Hero from "./components/errorHandling/Hero";
 
 function App() {
   return (
     <div className="App">
 
-      <FrParentComponent></FrParentComponent>
+      <ErrorBoundry>
+      <Hero heroName="BatMan"></Hero>
+      <Hero heroName="SuperMan"></Hero>
+      <Hero heroName="joker"></Hero>
+      </ErrorBoundry>
+
     </div>
   );
 }
