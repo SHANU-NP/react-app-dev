@@ -1,15 +1,12 @@
 import ErrorBoundry from "./components/errorHandling/ErrorBoundry";
 import Hero from "./components/errorHandling/Hero";
+import WelcomeMessage from "./components/eventBindingPractise/Welcome";
 
 function App() {
   return (
     <div className="App">
-
-      <ErrorBoundry>
-      <Hero heroName="BatMan"></Hero>
-      <Hero heroName="SuperMan"></Hero>
-      <Hero heroName="joker"></Hero>
-      </ErrorBoundry>
+    
+    <WelcomeMessage></WelcomeMessage>
 
     </div>
   );
