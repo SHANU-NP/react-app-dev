@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
 
-        <ClickCounter></ClickCounter>
+        <ClickCounter name = "shanu"></ClickCounter>
         <HoverCounter></HoverCounter>
 
     </div>
