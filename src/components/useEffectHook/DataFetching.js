@@ -2,36 +2,25 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 function DataFetching() {
-  const [items, setItem] = useState([]);
+  const [item, setItem] = useState({});
+  const [id,setId] = useState(1)
 
   useEffect(() => {
     axios
-      .get("https://jsonplaceholder.typicode.com/posts")
-      .then((reseponse) => {
-        const fetchedItems = reseponse.data.map((item) => {
-          return {
-            id: item.id,
-            userId: item.userId,
-            title: item.title,
-            body: item.body,
-          };
-        });
-        setItem(fetchedItems);
-      })
-      .catch((reason) => console.log(reason));
-  }, []);
+      .get(`https://jsonplaceholder.typicode.com/posts/${id}`)
+      .then((reseponse) => setItem(reseponse.data))
+        .catch((reason) => console.log(reason));
+  }, [id]);
 
   return (
     <div>
-      {items.map((item) => {
-        return (
-          <div key={item.id}>
-            <p>userId : {item.userId}</p>
-            <p>title : {item.title}</p>
-            <p>body : {item.body}</p>
-          </div>
-        );
-      })}
+      <input type="text" onChange={e => {setId(e.target.value)}}/>
+
+      <p>userId : {item.userId}</p>
+      <p>title : {item.title}</p>
+      <p>body : {item.body}</p>
+
+
     </div>
   );
 }
