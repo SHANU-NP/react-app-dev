@@ -1,13 +1,12 @@
 
 import './App.css';
-import HookCounterFour from './components/HookCounterFour';
-import HookCounterOne from './components/useEffectHook/HookCounterOne';
+import HookMouse from './components/useEffectHook/HookMouse';
 
 
 function App() {
   return (
     <div className="App">
-      <HookCounterOne></HookCounterOne>
+      <HookMouse></HookMouse>
     </div>
   );
 }
