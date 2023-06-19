@@ -1,6 +1,6 @@
 import "./App.css";
 import React from "react";
-import ComponentC from "./components/useContext/ComponentC";
+import CounterOne from "./components/useReducer/CounterOne";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -8,11 +8,7 @@ export const ChannelContext = React.createContext();
 function App() {
   return (
     <div className="App">
-      <UserContext.Provider value={"shanu"}>
-        <ChannelContext.Provider value={"evolution"}>
-          <ComponentC />
-        </ChannelContext.Provider>
-      </UserContext.Provider>
+      <CounterOne></CounterOne>
     </div>
   );
 }
