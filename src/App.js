@@ -1,14 +1,18 @@
+import "./App.css";
+import React from "react";
+import ComponentC from "./components/useContext/ComponentC";
 
-import './App.css';
-import DataFetching from './components/useEffectHook/DataFetching';
-import FetchWithButton from './components/useEffectHook/FetchWithButtonClick';
-
+export const UserContext = React.createContext();
+export const ChannelContext = React.createContext();
 
 function App() {
   return (
     <div className="App">
-      {/* <DataFetching></DataFetching> */}
-      <FetchWithButton></FetchWithButton>
+      <UserContext.Provider value={"shanu"}>
+        <ChannelContext.Provider value={"evolution"}>
+          <ComponentC />
+        </ChannelContext.Provider>
+      </UserContext.Provider>
     </div>
   );
 }
