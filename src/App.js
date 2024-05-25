@@ -1,20 +1,21 @@
-import logo from "./logo.svg";
-import "./App.css";
-import Message from "./components/Message";
-import Welcome  from "./components/Welocme";
-import Counter from "./components/Counter";
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Registration from './Registration';
+import Login from './Login';
+import Home from './Home';
+import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-
-       <Counter/> 
-    {/* <Welcome name = "shanu"/> */}
-
-
-      
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Registration />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/home" element={<Home />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
