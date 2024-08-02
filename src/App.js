@@ -1,20 +1,11 @@
-// src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Registration from './Registration';
-import Login from './Login';
-import Home from './Home';
-import './App.css';
+import FormComponent from './FormComponent';
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Registration />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/home" element={<Home />} />
-      </Routes>
-    </Router>
+    <div className="App">
+      <FormComponent />
+    </div>
   );
 };
 
